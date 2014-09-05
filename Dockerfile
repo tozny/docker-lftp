@@ -8,3 +8,4 @@ RUN apt-get update
 RUN apt-get install -y lftp
 
 ENTRYPOINT ["lftp"]
+
