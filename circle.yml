@@ -1,0 +1,12 @@
+machine:
+  services:
+    - docker
+
+dependencies:
+  override:
+    - docker info
+    - docker build -t zshenker/lftp .
+
+test:
+  override:
+    - docker run zshenker/lftp http://s3.amazonaws.com/zencodertesting/test.mov
