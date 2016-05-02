@@ -5,7 +5,7 @@ MAINTAINER Zac Shenker <zac@zacshenker.com>
 
 RUN apt-get update
 
-RUN apt-get install -y lftp
+RUN apt-get install -y lftp ssh
 
 ENTRYPOINT ["lftp"]
 
